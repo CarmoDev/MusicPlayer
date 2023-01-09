@@ -8,12 +8,12 @@ export const SongDetails = styled.div`
     border-radius: 8px;
     margin-right: 20px;
   }
-
+  
   div {
     display: flex;
     flex-direction: column;
   }
-
+  
   @media screen and (max-width: 720px) {
     flex-direction: column;
     text-align: center;
