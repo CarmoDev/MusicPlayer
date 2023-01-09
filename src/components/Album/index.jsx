@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useRef } from "react";
 
 import { SongDetails, Player, Timer } from "./styles";
@@ -9,7 +10,7 @@ export default function Album({ tracks }) {
   const [trackProgress, setTrackProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const { id, title, audioSrc, imageSrc } = tracks[trackIndex];
+  const { title, audioSrc, imageSrc } = tracks[trackIndex];
 
   const audioRef = useRef(new Audio(audioSrc));
   const intervalRef = useRef();

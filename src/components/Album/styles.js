@@ -9,6 +9,11 @@ export const SongDetails = styled.div`
     margin-right: 20px;
   }
 
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media screen and (max-width: 720px) {
     flex-direction: column;
     text-align: center;
