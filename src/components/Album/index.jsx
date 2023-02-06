@@ -137,7 +137,11 @@ export default function Album({ tracks }) {
 
         <Timer>
           <span>{`${Actualminutes} : ${Actualseconds}`}</span>
-          <span className="TotalMinutes">{`${minutes} : ${seconds}`}</span>
+          {isNaN(minutes) ? (
+            <span className="TotalMinutes">{`00 : 00`}</span>
+          ) : (
+            <span className="TotalMinutes">{`${minutes} : ${seconds}`}</span>
+          )}
         </Timer>
       </Player>
     </>
